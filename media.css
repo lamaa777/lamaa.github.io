@@ -1,0 +1,245 @@
+/* Медиа разметка для меню */
+
+@media (max-width: 1000px) {
+    .navbar__wrap .menu {
+        display: none;
+    }
+    .hamb {
+        display: flex;
+        align-items: center;
+    }
+    .hamb__field {
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    .bar {
+        display: block;
+        width: 30px;
+        height: 3px;
+        margin: 6px auto;
+        background-color: #fff;
+        transition: 0.2s;
+    }
+    .popup {
+        position: fixed;
+        top: 75px;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        z-index: 100;
+        display: flex;
+        transition: 0.3s;
+    }
+    .popup.open {
+        left: 0;
+    }
+    .popup .menu {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        padding: 50px 0;
+        overflow: auto;
+    }
+    .popup .menu > li {
+        width: 100%;
+    }
+    .popup .menu > li > a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+        font-size: 20px;
+        font-weight: bold;
+        color: #3f3f3f;
+    }
+    .popup .menu > li > a:hover {
+        background-color: rgba(122, 82, 179, 0.1);
+    }
+    .hamb__field.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamb__field.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamb__field.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    body.noscroll {
+        overflow: hidden;
+    }
+}
+/*кейфрейм разметка*/
+@keyframes animate {
+    0%,
+    100% {
+        clip-path: polygon(
+            0% 45%,
+            15% 44%,
+            32% 50%,
+            54% 60%,
+            70% 61%,
+            84% 59%,
+            100% 52%,
+            100% 100%,
+            0% 100%
+        );
+    }
+    50% {
+        clip-path: polygon(
+            0% 60%,
+            16% 65%,
+            34% 66%,
+            51% 62%,
+            67% 50%,
+            84% 45%,
+            100% 46%,
+            100% 100%,
+            0% 100%
+        );
+    }
+}
+
+/* Медиа разметка для мейн текста */
+
+@media (max-width: 1050px) {
+    .dws-wrapper1 {
+        top: 290%;
+        left: 50%;
+        margin-right: 50%;
+    }
+    .dws-wrapper2 {
+        top: 330%;
+        left: 50%;
+        margin-right: 50%;
+    }
+    .dws-wrapper3 {
+        top: 370%;
+        left: 50%;
+        margin-right: 50%;
+    }
+}
+@media (max-width: 768px) {
+    .dws-wrapper1 {
+        top: 270%;
+        left: 50%;
+        margin-right: 50%;
+    }
+    .dws-wrapper2 {
+        top: 300%;
+        left: 50%;
+        margin-right: 50%;
+    }
+    .dws-wrapper3 {
+        top: 330%;
+        left: 50%;
+        margin-right: 50%;
+    }
+    .boxImg1,
+    .boxImg2,
+    .boxImg3 {
+        width: 400px;
+        height: 250px;
+    }
+}
+@media (max-width: 576px) {
+    .boxImg1,
+    .boxImg2,
+    .boxImg3 {
+        width: 300px;
+        height: 150px;
+    }
+    .boxImg1 img,
+    .boxImg2 img,
+    .boxImg3 img {
+        height: 200px;
+    }
+    .container1:before,
+    .container1:after,
+    .container2:before,
+    .container2:after,
+    .container3:before,
+    .container3:after {
+        width: 200px;
+        height: 200px;
+    }
+    .text1 p,
+    .text2 p,
+    .text3 p {
+        display: none;
+    }
+    .bt1,
+    .bt2,
+    .bt3 {
+        top: 100%;
+        left: 40%;
+    }
+    .text1 h1,
+    .text2 h1,
+    .text3 h1 {
+        margin-left: 100px;
+    }
+    @media (max-width: 440px) {
+        .dws-wrapper1 {
+            top: 290%;
+            left: 50%;
+            margin-right: 50%;
+            padding-top: 400%;
+        }
+        .dws-wrapper2 {
+            top: 320%;
+            left: 50%;
+            margin-right: 50%;
+            padding-top: 400%;
+        }
+        .dws-wrapper3 {
+            top: 350%;
+            left: 50%;
+            margin-right: 50%;
+            padding-top: 400%;
+        }
+    }
+}
+
+/* Разметка для карточек */
+
+@media (max-width: 1050px) {
+    .cards {
+        display: block;
+    }
+    .card1,
+    .card2,
+    .card3,
+    .card4 {
+        margin: 20px 80px;
+    }
+    .content h2 {
+        font-size: 6em;
+    }
+}
+
+@media (max-width: 768px) {
+    .headet-text h1 {
+        font-size: 60px;
+    }
+    .content {
+        margin-top: 0px;
+        padding-top: 204px;
+    }
+    .custom-btn {
+    }
+    .content h2 {
+        font-size: 4em;
+    }
+}
+@media (max-width: 500px) {
+}
+/*Разметка для футера*/
+.icon1,
+.icon2,
+.icon3 {
+    margin-right: 20px;
+}
